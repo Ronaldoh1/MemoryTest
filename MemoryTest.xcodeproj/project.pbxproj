@@ -15,6 +15,8 @@
 		F2292EA91B2523E1003D82D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2292EA81B2523E1003D82D5 /* Images.xcassets */; };
 		F2292EAC1B2523E1003D82D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2292EAA1B2523E1003D82D5 /* LaunchScreen.xib */; };
 		F2292EB81B2523E1003D82D5 /* MemoryTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2292EB71B2523E1003D82D5 /* MemoryTestTests.m */; };
+		F2292EC31B252426003D82D5 /* Sweater.m in Sources */ = {isa = PBXBuildFile; fileRef = F2292EC21B252426003D82D5 /* Sweater.m */; };
+		F2292EC61B25264F003D82D5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F2292EC51B25264F003D82D5 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		F2292EB11B2523E1003D82D5 /* MemoryTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2292EB61B2523E1003D82D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2292EB71B2523E1003D82D5 /* MemoryTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryTestTests.m; sourceTree = "<group>"; };
+		F2292EC11B252426003D82D5 /* Sweater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sweater.h; path = ../Sweater.h; sourceTree = "<group>"; };
+		F2292EC21B252426003D82D5 /* Sweater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sweater.m; path = ../Sweater.m; sourceTree = "<group>"; };
+		F2292EC41B25264F003D82D5 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F2292EC51B25264F003D82D5 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 		F2292E971B2523E0003D82D5 /* MemoryTest */ = {
 			isa = PBXGroup;
 			children = (
+				F2292EC11B252426003D82D5 /* Sweater.h */,
+				F2292EC21B252426003D82D5 /* Sweater.m */,
+				F2292EC41B25264F003D82D5 /* Person.h */,
+				F2292EC51B25264F003D82D5 /* Person.m */,
 				F2292E9C1B2523E0003D82D5 /* AppDelegate.h */,
 				F2292E9D1B2523E0003D82D5 /* AppDelegate.m */,
 				F2292EA21B2523E0003D82D5 /* ViewController.h */,
@@ -222,8 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2292EC61B25264F003D82D5 /* Person.m in Sources */,
 				F2292EA11B2523E0003D82D5 /* MemoryTest.xcdatamodeld in Sources */,
 				F2292E9E1B2523E0003D82D5 /* AppDelegate.m in Sources */,
+				F2292EC31B252426003D82D5 /* Sweater.m in Sources */,
 				F2292EA41B2523E0003D82D5 /* ViewController.m in Sources */,
 				F2292E9B1B2523E0003D82D5 /* main.m in Sources */,
 			);
@@ -351,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = MemoryTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = MemoryTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Person.h"
+#import "Sweater.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,30 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
     // Override point for customization after application launch.
+    Person *Ron = [[Person alloc] initWithName:@"Ron"];
+    Person *Kevin = [[Person alloc] initWithName:@"Kevin"];
+
+    Sweater *graySweater = [[Sweater alloc]initWithSweaterType:SweaterTypeGray];
+    Sweater *blueSweater = [[Sweater alloc]initWithSweaterType:SweaterTypeBlue];
+
+    Ron.sweater = graySweater;
+    Kevin.sweater = blueSweater;
+
+    [graySweater release];
+    [blueSweater release];
+
+    Kevin.sweater = graySweater;
+
+    Ron.sweater = nil;
+    NSString *quote = [Ron quote];
+    NSLog(@"Quote :@=%@", quote);
+
+    [Ron release];
+    [Kevin release];
+
+
     return YES;
 }
 
