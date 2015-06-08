@@ -35,7 +35,7 @@
 
 -(void)dealloc{
     NSLog(@"%s %@ deallocated", __PRETTY_FUNCTION__, self);
-    [super dealloc];
+   
 }
 
 

@@ -12,7 +12,7 @@
 
 - (instancetype)initWithName:(NSString *)name{
     if ((self = [super init])) {
-        _name = [name retain];
+
         _sweater = nil;
 
     }
@@ -20,7 +20,7 @@
 }
 
 -(NSString *)quote{
-    return [[[NSString alloc] initWithFormat:@"%@ say: Gimme my sweater back!", _name] autorelease];
+    return [[NSString alloc] initWithFormat:@"%@ say: Gimme my sweater back!", _name];
 }
 
 -(NSString *)description{
@@ -33,10 +33,10 @@
 
 -(void)dealloc{
     NSLog(@"%s %@ deallocated", __PRETTY_FUNCTION__, self);
-    [_sweater release];
+
     _sweater = nil;
-    [_name release];
+
     _name= nil;
-    [super dealloc];
 }
+  
 @end

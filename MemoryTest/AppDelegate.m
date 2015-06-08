@@ -28,17 +28,12 @@
     Ron.sweater = graySweater;
     Kevin.sweater = blueSweater;
 
-    [graySweater release];
-    [blueSweater release];
 
     Kevin.sweater = graySweater;
 
     Ron.sweater = nil;
     NSString *quote = [Ron quote];
     NSLog(@"Quote :@=%@", quote);
-
-    [Ron release];
-    [Kevin release];
 
 
     return YES;

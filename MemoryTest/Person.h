@@ -10,8 +10,8 @@
 @class Sweater;
 
 @interface Person : NSObject
-@property (nonatomic , retain) Sweater *sweater;
-@property (nonatomic, retain) NSString *name;
+@property (nonatomic , strong) Sweater *sweater;
+@property (nonatomic, strong) NSString *name;
 - (instancetype)initWithName:(NSString *)name;
 - (NSString *)quote;
 
